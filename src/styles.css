@@ -1,0 +1,92 @@
+/* src/styles.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HomePage styles */
+h1 {
+  text-align: center;
+}
+
+.homepage-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.homepage-links a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.homepage-links a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* BirthdayWishingPage styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* PollsPage styles */
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}

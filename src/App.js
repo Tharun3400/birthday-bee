@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import BirthdayWishingPage from "./components/BirthdayWishingPage";
+import PollsPage from "./components/PollsPage";
+import "./styles.css"; // Import CSS styles
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/wishing" component={BirthdayWishingPage} />
+          <Route path="/polls" component={PollsPage} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
